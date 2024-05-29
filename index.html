@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活动时间表</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>活动时间表</h1>
+    </header>
+    <main>
+        <section id="schedule">
+            <h2>活动安排</h2>
+            <div class="activity">
+                <h3>活动一</h3>
+                <p>时间：2024年6月1日 10:00 - 12:00</p>
+                <p>描述：这是一个关于学习写作技巧的活动。</p>
+                <button class="delete-button">删除</button>
+            </div>
+            <div class="activity">
+                <h3>活动二</h3>
+                <p>时间：2024年6月2日 14:00 - 16:00</p>
+                <p>描述：这是一个关于阅读理解的活动。</p>
+                <button class="delete-button">删除</button>
+            </div>
+            <!-- 可以继续添加更多活动 -->
+        </section>
+        <section id="add-activity">
+            <h2>添加新活动</h2>
+            <form id="activity-form">
+                <label for="activity-name">活动名称：</label>
+                <input type="text" id="activity-name" name="activity-name" required>
+                <label for="activity-date">日期和时间：</label>
+                <input type="datetime-local" id="activity-date" name="activity-date" required>
+                <label for="activity-description">活动描述：</label>
+                <textarea id="activity-description" name="activity-description" required></textarea>
+                <label for="activity-password">密码：</label>
+                <input type="password" id="activity-password" name="activity-password" required>
+                <button type="submit">添加活动</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 银河酷玩活动时间表</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
